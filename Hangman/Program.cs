@@ -1,4 +1,5 @@
-﻿
+string word = "example";
+
 
 using System;
 using System.Collections.Generic;
@@ -71,12 +72,23 @@ class Program
             Console.WriteLine("Lives remaining: " + lives);
             Console.WriteLine("Current word: " + string.Join(" ", word.Select(c => guessedLetters.Contains(c) || c == ' ' ? c.ToString() : "_")));
 
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
-            Console.Clear();
-        }
-    }
+    Console.WriteLine("Press any key to continue...");
+    Console.ReadKey();
+    Console.Clear();
+
+
+
+
+
 }
+// End of the Hangman game code
+// This code implements a simple console-based Hangman game in C#.
+// It allows the user to guess letters of a predefined word, tracks lives, and displays the current state of the word.
+// The game continues until the user either guesses the word or runs out of lives.
+// The code uses basic C# constructs such as loops, conditionals, and collections to manage the game state.
+// The game is designed to be simple and educational, demonstrating basic programming concepts in C#.
+// The code is structured to be easy to read and understand, making it suitable for beginners learning C#.
+// The game can be extended with additional features such as a word list, difficulty levels, or a graphical interface.
 
 
 
